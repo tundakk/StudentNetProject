@@ -3,7 +3,7 @@ tasks:
   - name: Restore & Build
     init: |
       dotnet dev-certs https 
-      dotnet run StudentNetProject.sln
+      dotnet run /workspace/StudentNetProject/StudentNetProject.sln
       
 ports:
   - port: 5000

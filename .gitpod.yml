@@ -1,5 +1,4 @@
-image: gitpod/workspace-dotnet-vnc
-
+image: gitpod/workspace-dotnet
 tasks:
   - name: Restore & Build
     init: |

@@ -5,6 +5,11 @@ tasks:
     init: |
       dotnet dev-certs https 
       dotnet run StudentNetProject.sln
+      
 ports:
   - port: 5000
     onOpen: open-preview
+    
+vscode:
+  extensions:
+    - muhammad-sammy.csharp

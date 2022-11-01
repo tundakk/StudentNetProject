@@ -1,0 +1,15 @@
+image: gitpod/workspace-dotnet
+tasks:
+  - name: Restore & Build
+    init: |
+      dotnet dev-certs https 
+      dotnet build /workspace/StudentNetProject/StudentNetProject.sln
+      dotnet run /workspace/StudentNetProject/StudentNetProject.sln
+      
+ports:
+  - port: 5000
+    onOpen: open-preview
+    
+vscode:
+  extensions:
+    - muhammad-sammy.csharp

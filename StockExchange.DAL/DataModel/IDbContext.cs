@@ -1,11 +1,8 @@
 ﻿namespace StockExchange.DAL.DataModel
 {
-
     using System.Collections.Generic;
     using System.Data.Entity;
-
     public interface IDbContext
-
     {
         int BatchSaveChanges();
         void BulkSaveChanges();
@@ -17,6 +14,5 @@
         void SetState<TEntity>(TEntity entity, EntityState state) where TEntity : class;
 
         DbSet<TestModel> TestModels { get; set; } //example class
-
     }
 }
